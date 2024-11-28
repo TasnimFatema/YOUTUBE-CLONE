@@ -16,35 +16,7 @@
 .slidebar-link:hover{
     background-color: rgb(235, 233, 233);
 }
-.home{
-    height: 35px;
-    margin-left: 15px;
-    margin-top: 20px;
+.slidebar-link img {
+    height: 24px;
 
-}
-.explore{
-    height: 35px;
-    margin-left: 15px;
-    margin-top: 20px;
-
-}
-.subscriptions{
-    height: 35px;
-    margin-left: 15px;
-    margin-top: 20px;
-}
-.originals{
-    height: 35px;
-    margin-left: 15px;
-    margin-top: 20px;
-}
-.youtube-music{
-    height: 35px;
-    margin-left: 15px;
-    margin-top: 20px;
-}
-.library{
-    height: 35px;
-    margin-left: 15px;
-    margin-top: 20px;
 }
