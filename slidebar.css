@@ -5,18 +5,28 @@
     top: 55px;
     background-color: white;
     width: 72px;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-right-color: rgb(228, 228, 228);
+    z-index: 200;
+    padding-top: 5px;
+
 }
-.slidebar-link{
-    height: 76px;
+.slidebar-link{/* class-selector*/
+    height: 74px;
+    display: flex;
+    justify-content: center;/*horizontal center*/
+    align-items: center;/*vertical center */
+    flex-direction: column;/* column displays our elements vertically*/
+    cursor: pointer;
 
 }
 .slidebar-link:hover{
     background-color: rgb(235, 233, 233);
 }
-.slidebar-link img {
+.slidebar-link img /*combination of class&element-selector*/{
     height: 24px;
+    margin-bottom: 4px;
 
+}
+.slidebar-link div{
+    font-family: Roboto,Arial;
+    font-size: 10px;
 }
