@@ -26,9 +26,16 @@
     height: 24px;
     margin-left: 24px;
     margin-right: 24px;
+    cursor: pointer;
+
 }
+
+
+
 .youtube-logo{
     height: 20px;
+    cursor: pointer;
+
 }
 .middle-section{
     flex: 1;
@@ -51,6 +58,7 @@
     border-radius: 2px;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
     width: 0;
+
     
 }
 .search-bar::placeholder{
@@ -61,7 +69,7 @@ font-size: 16px;
 }
 .search-button{
     height: 39px;
-    max-width: 30px;
+    width: 30px;
     margin-right: 5px;
     padding-left: 15px;
     padding-right: 40px;
@@ -72,10 +80,43 @@ font-size: 16px;
     border-radius: 2px;
     margin-left: -1px;
     margin-right: 10px;
+
+    position:relative;
+}
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.notification-icon-container .tooltip,
+.upload-icon-container .tooltip,
+.YouTube-apps-container .tooltip{
+    font-family: Roboto, Arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;/*when you hover over tooltip it will do nothing*/
+    white-space: nowrap;
+
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.notification-icon-container:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.YouTube-apps-container:hover .tooltip{
+    opacity: 1;
 }
 .search-icon{
     height: 25px;
     margin-top: 4px;
+    cursor: pointer;
+
 
 }
 .voice-search-button{
@@ -84,11 +125,26 @@ font-size: 16px;
     border-radius: 20px;
     border: none;
     background-color: rgb(245, 245, 245);
+    cursor: pointer;
+
 
 }
 .voice-search-icon{
     height: 24px;
-    margin-top: 4px;
+}
+.search-button,
+.voice-search-button,
+.upload-icon-containr,
+.notification-icon-container,
+.YouTube-apps-container {
+    position: relative;
+}
+.voice-search-button,
+.notification-icon-container,
+.YouTube-apps-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .right-section{
     width: 180px;
@@ -100,12 +156,17 @@ font-size: 16px;
 }
 .upload-icon{
     height: 24px;
+    cursor: pointer;
 }
 .youtube-apps{
     height: 24px;
+    cursor: pointer;
+
 }
 .notifications{
     height: 24px;
+    cursor: pointer;
+
 
 
 }
@@ -129,5 +190,7 @@ font-size: 16px;
 .channel-picture{
     height: 32px;
     border-radius: 16px;
+    cursor: pointer;
+
 
 }
